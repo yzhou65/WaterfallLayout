@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: ADWaterfallLayoutDelegate定义
 @objc protocol ADWaterfallLayoutDelegate {
     func waterfallLayout(_ layout: ADWaterfallLayout, heightForItemAt indexPath: IndexPath, itemWidth: CGFloat) -> CGFloat
     
@@ -26,43 +27,35 @@ class ADWaterfallLayout: UICollectionViewLayout {
     
     weak var delegate: ADWaterfallLayoutDelegate?
     
-    var contentHeight: CGFloat = 0
+    private var contentHeight: CGFloat = 0
     
     // MARK: delegate传入的尺寸数据
     var rowMargin: CGFloat {
-        get {
-            guard let rowMargin = self.delegate!.rowMarginOfWaterflowLayout else {
-                return ADRowMargin
-            }
-            return rowMargin
+        guard let rowMargin = self.delegate!.rowMarginOfWaterflowLayout else {
+            return ADRowMargin
         }
+        return rowMargin
     }
     
     var columnMargin: CGFloat {
-        get {
-            guard let columnMargin = self.delegate!.columnMarginOfWaterflowLayout else {
-                return ADColumnMargin
-            }
-            return columnMargin
+        guard let columnMargin = self.delegate!.columnMarginOfWaterflowLayout else {
+            return ADColumnMargin
         }
+        return columnMargin
     }
     
     var columnCount: CGFloat {
-        get {
-            guard let columnCount = self.delegate!.columnCountOfWaterflowLayout else {
-                return ADColumnCount
-            }
-            return columnCount
+        guard let columnCount = self.delegate!.columnCountOfWaterflowLayout else {
+            return ADColumnCount
         }
+        return columnCount
     }
     
     var edgeInsets: UIEdgeInsets {
-        get {
-            guard let edgeInsets = self.delegate!.edgeInsetsOfWaterflowLayout else {
-                return ADEdgeInset
-            }
-            return edgeInsets
+        guard let edgeInsets = self.delegate!.edgeInsetsOfWaterflowLayout else {
+            return ADEdgeInset
         }
+        return edgeInsets
     }
     
     // MARK: 设置item尺寸
@@ -142,10 +135,8 @@ class ADWaterfallLayout: UICollectionViewLayout {
      * 返回collectionView的contentSize
      */
     override var collectionViewContentSize: CGSize {
-        get {
-            // 根据最高一列来决定
-            return CGSize(width: 0, height: self.contentHeight - self.rowMargin)
-        }
+        // 根据最高一列来决定
+        return CGSize(width: 0, height: self.contentHeight - self.rowMargin)
     }
     
     
@@ -165,23 +156,7 @@ class ADWaterfallLayout: UICollectionViewLayout {
         return (minIndex, minHeight)
     }
     
-    
-    /**
-     * 找出一个数组中的最大数的index和值
-     */
-    private func getMaxHeight(heights: [CGFloat]) -> CGFloat {
-        var maxHeight = heights.first!
-        
-        for i in 1..<heights.count {
-            if heights[i] > maxHeight {
-                maxHeight = heights[i]
-            }
-        }
-        return maxHeight
-    }
-    
     // MARK: 懒加载
-    
     // 存放所有cell的布局属性
     lazy var attrsArray = [UICollectionViewLayoutAttributes]()
     
