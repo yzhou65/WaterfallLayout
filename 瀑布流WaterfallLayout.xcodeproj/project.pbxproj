@@ -13,9 +13,17 @@
 		8A5F82F22039AB3A00B0106D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F82F12039AB3A00B0106D /* Assets.xcassets */; };
 		8A5F82F52039AB3A00B0106D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F82F32039AB3A00B0106D /* LaunchScreen.storyboard */; };
 		8A5F82FD2039AC2B00B0106D /* ADWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F82FC2039AC2B00B0106D /* ADWaterfallLayout.swift */; };
+		8A5F82FF2039C41E00B0106D /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F82FE2039C41D00B0106D /* 1.plist */; };
+		8A5F83012039C4E300B0106D /* NSObject+ADKeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F83002039C4E300B0106D /* NSObject+ADKeyValue.swift */; };
+		8A5F83092039C5A100B0106D /* ADShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F83062039C5A100B0106D /* ADShopCell.xib */; };
+		8A5F830B2039C5B500B0106D /* ADShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F830A2039C5B500B0106D /* ADShop.swift */; };
+		8A5F830D2039C62D00B0106D /* ADShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F830C2039C62D00B0106D /* ADShopCell.swift */; };
+		EB17EBFA1C41717E6C3E06EA /* Pods____WaterfallLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7817016AD7CF3AB2A8F566B /* Pods____WaterfallLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30E0A0B3E7B71A8F3C866BC9 /* Pods-瀑布流WaterfallLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流WaterfallLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流WaterfallLayout/Pods-瀑布流WaterfallLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		5818E7C91CB7AF97B27C7658 /* Pods-瀑布流WaterfallLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-瀑布流WaterfallLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-瀑布流WaterfallLayout/Pods-瀑布流WaterfallLayout.release.xcconfig"; sourceTree = "<group>"; };
 		8A5F82E72039AB3A00B0106D /* 瀑布流WaterfallLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "瀑布流WaterfallLayout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5F82EA2039AB3A00B0106D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A5F82EC2039AB3A00B0106D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		8A5F82F42039AB3A00B0106D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A5F82F62039AB3A00B0106D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A5F82FC2039AC2B00B0106D /* ADWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADWaterfallLayout.swift; sourceTree = "<group>"; };
+		8A5F82FE2039C41D00B0106D /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		8A5F83002039C4E300B0106D /* NSObject+ADKeyValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ADKeyValue.swift"; sourceTree = "<group>"; };
+		8A5F83062039C5A100B0106D /* ADShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADShopCell.xib; sourceTree = "<group>"; };
+		8A5F830A2039C5B500B0106D /* ADShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADShop.swift; sourceTree = "<group>"; };
+		8A5F830C2039C62D00B0106D /* ADShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADShopCell.swift; sourceTree = "<group>"; };
+		B7817016AD7CF3AB2A8F566B /* Pods____WaterfallLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____WaterfallLayout.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB17EBFA1C41717E6C3E06EA /* Pods____WaterfallLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		596EC484169581D1B4875A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7817016AD7CF3AB2A8F566B /* Pods____WaterfallLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A5F82DE2039AB3A00B0106D = {
 			isa = PBXGroup;
 			children = (
 				8A5F82E92039AB3A00B0106D /* 瀑布流WaterfallLayout */,
 				8A5F82E82039AB3A00B0106D /* Products */,
+				E95156812DD968981AFC7F69 /* Pods */,
+				596EC484169581D1B4875A66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +81,13 @@
 		8A5F82E92039AB3A00B0106D /* 瀑布流WaterfallLayout */ = {
 			isa = PBXGroup;
 			children = (
+				8A5F830A2039C5B500B0106D /* ADShop.swift */,
+				8A5F830C2039C62D00B0106D /* ADShopCell.swift */,
+				8A5F83062039C5A100B0106D /* ADShopCell.xib */,
 				8A5F82FC2039AC2B00B0106D /* ADWaterfallLayout.swift */,
 				8A5F82EC2039AB3A00B0106D /* ViewController.swift */,
+				8A5F82FE2039C41D00B0106D /* 1.plist */,
+				8A5F83002039C4E300B0106D /* NSObject+ADKeyValue.swift */,
 				8A5F82EE2039AB3A00B0106D /* Main.storyboard */,
 				8A5F82F12039AB3A00B0106D /* Assets.xcassets */,
 				8A5F82F32039AB3A00B0106D /* LaunchScreen.storyboard */,
@@ -67,6 +97,15 @@
 			path = "瀑布流WaterfallLayout";
 			sourceTree = "<group>";
 		};
+		E95156812DD968981AFC7F69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30E0A0B3E7B71A8F3C866BC9 /* Pods-瀑布流WaterfallLayout.debug.xcconfig */,
+				5818E7C91CB7AF97B27C7658 /* Pods-瀑布流WaterfallLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A5F82F92039AB3A00B0106D /* Build configuration list for PBXNativeTarget "瀑布流WaterfallLayout" */;
 			buildPhases = (
+				A10903C6D90BC271E7BBDB77 /* [CP] Check Pods Manifest.lock */,
 				8A5F82E32039AB3A00B0106D /* Sources */,
 				8A5F82E42039AB3A00B0106D /* Frameworks */,
 				8A5F82E52039AB3A00B0106D /* Resources */,
+				91A8914EC0D2215F533DA2C1 /* [CP] Embed Pods Frameworks */,
+				0BBF2BB5CF9E3CCBD30DF0CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +142,7 @@
 				TargetAttributes = {
 					8A5F82E62039AB3A00B0106D = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -129,11 +172,61 @@
 			files = (
 				8A5F82F52039AB3A00B0106D /* LaunchScreen.storyboard in Resources */,
 				8A5F82F22039AB3A00B0106D /* Assets.xcassets in Resources */,
+				8A5F82FF2039C41E00B0106D /* 1.plist in Resources */,
 				8A5F82F02039AB3A00B0106D /* Main.storyboard in Resources */,
+				8A5F83092039C5A100B0106D /* ADShopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BBF2BB5CF9E3CCBD30DF0CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流WaterfallLayout/Pods-瀑布流WaterfallLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A8914EC0D2215F533DA2C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-瀑布流WaterfallLayout/Pods-瀑布流WaterfallLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A10903C6D90BC271E7BBDB77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A5F82E32039AB3A00B0106D /* Sources */ = {
@@ -142,6 +235,9 @@
 			files = (
 				8A5F82ED2039AB3A00B0106D /* ViewController.swift in Sources */,
 				8A5F82FD2039AC2B00B0106D /* ADWaterfallLayout.swift in Sources */,
+				8A5F830B2039C5B500B0106D /* ADShop.swift in Sources */,
+				8A5F83012039C4E300B0106D /* NSObject+ADKeyValue.swift in Sources */,
+				8A5F830D2039C62D00B0106D /* ADShopCell.swift in Sources */,
 				8A5F82EB2039AB3A00B0106D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,21 +359,26 @@
 		};
 		8A5F82FA2039AB3A00B0106D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E0A0B3E7B71A8F3C866BC9 /* Pods-瀑布流WaterfallLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "瀑布流WaterfallLayout/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "YZ.---WaterfallLayout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8A5F82FB2039AB3A00B0106D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5818E7C91CB7AF97B27C7658 /* Pods-瀑布流WaterfallLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "瀑布流WaterfallLayout/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -306,6 +407,7 @@
 				8A5F82FB2039AB3A00B0106D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
